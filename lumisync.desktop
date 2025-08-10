@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=LumiSync
+Comment=Synchronize your Linux desktop settings across devices
+Comment[de]=Synchronisieren Sie Ihre Linux-Desktop-Einstellungen zwischen Geräten
+Exec=python3 -m lumisync.main
+Icon=lumisync
+Terminal=false
+Type=Application
+Categories=Utility;System;Settings;
+Keywords=sync;backup;settings;desktop;cloud;
+StartupNotify=true
+StartupWMClass=LumiSync
