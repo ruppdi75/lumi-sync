@@ -19,7 +19,7 @@ def read_requirements():
 
 setup(
     name="lumisync",
-    version="0.1.0",
+    version="0.2.0",
     author="LumiSync Development Team",
     author_email="dev@lumisync.org",
     description="Synchronize your Linux desktop settings across devices",

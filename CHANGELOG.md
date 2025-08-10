@@ -5,6 +5,33 @@ All notable changes to LumiSync will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2025-01-10
+
+### Added
+- **pCloud Integration** - Full pCloud provider support with real authentication
+- **Provider Selection Dialog** - Professional interface for choosing cloud storage provider
+- **Automatic Folder Creation** - "Lumi-Sync" folder created automatically in your cloud storage
+- **Real-World Authentication** - OAuth 2.0 for Google Drive, username/password for pCloud
+- **Enhanced UI Components** - Professional two-column layout with improved visual feedback
+
+### Fixed
+- **Selection Buttons** - Select All, Select None, and Recommended buttons now work correctly
+- **UI State Updates** - Proper signal emission for selection changes and UI updates
+- **Cloud Connection Logic** - Real authentication instead of demo/example accounts
+- **Backup Organization** - All backups now stored in dedicated "Lumi-Sync" folder
+
+### Changed
+- **Provider Factory** - Updated to include pCloud alongside Google Drive
+- **Authentication Flow** - Replaced demo connections with real cloud provider authentication
+- **File Storage Structure** - Organized backup storage in cloud-specific folders
+- **User Experience** - Improved visual feedback and status updates throughout the application
+
+### Technical Improvements
+- Added `requests` dependency for pCloud API integration
+- Implemented abstract method requirements for cloud providers
+- Enhanced error handling and logging for cloud operations
+- Improved component architecture with provider dialog integration
+
 ## [Unreleased]
 
 ### Added

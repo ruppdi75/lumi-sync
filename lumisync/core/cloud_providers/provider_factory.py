@@ -8,6 +8,7 @@ import logging
 
 from .base_provider import CloudProvider
 from .google_drive import GoogleDriveProvider
+from .pcloud import PCloudProvider
 
 logger = logging.getLogger(__name__)
 
@@ -24,10 +25,10 @@ class CloudProviderFactory:
     # Registry of available providers
     _providers: Dict[str, Type[CloudProvider]] = {
         'google_drive': GoogleDriveProvider,
+        'pcloud': PCloudProvider,
         # Future providers will be added here:
         # 'onedrive': OneDriveProvider,
         # 'box': BoxProvider,
-        # 'pcloud': PCloudProvider,
     }
     
     @classmethod

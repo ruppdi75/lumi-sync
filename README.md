@@ -5,7 +5,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyQt6](https://img.shields.io/badge/GUI-PyQt6-green.svg)](https://pypi.org/project/PyQt6/)
-[![Status: PoC](https://img.shields.io/badge/Status-Proof%20of%20Concept-orange.svg)]()
+[![Status: Beta](https://img.shields.io/badge/Status-Beta-blue.svg)]()
+[![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-brightgreen.svg)]()
 
 LumiSync is a cutting-edge, professional-grade application designed for worldwide use by both beginners and Linux professionals. It provides seamless backup and restoration of your Linux desktop settings, application profiles, and configurations using your preferred cloud storage provider.
 
@@ -19,9 +20,11 @@ Create the most intuitive and powerful Linux settings synchronization tool that 
 - **One-click backup and restore** of desktop settings
 - **Intelligent profile detection** for Firefox and Thunderbird (APT, Snap, Flatpak)
 - **GNOME/dconf settings synchronization** (themes, wallpapers, dock favorites)
-- **Multi-cloud support** - Google Drive, OneDrive, Box, pCloud with your own API credentials
+- **Multi-cloud support** - Google Drive and pCloud with real authentication (OneDrive, Box coming soon)
+- **Real-world authentication** - OAuth 2.0 for Google Drive, secure credentials for pCloud
 - **Cross-distribution compatibility** - Ubuntu, Fedora, openSUSE, Arch, and more
-- **Categorized selection** - Desktop, Files, System Settings, System Tools
+- **Categorized selection** - Desktop, Files, System Settings, System Tools with working Select All/None/Recommended buttons
+- **Automatic folder organization** - Creates dedicated "Lumi-Sync" folder in your cloud storage
 - **Real-time progress tracking** with pause/resume/stop controls
 - **Advanced logging system** with filtering and export capabilities
 
@@ -32,20 +35,22 @@ Create the most intuitive and powerful Linux settings synchronization tool that 
 - **Minimal permissions** - Only accesses what's necessary
 
 ### 🎨 Modern User Interface
-- **Dark Theme Design** - Professional, eye-friendly interface
-- **Tabbed Layout** - Progress, Logs, and Results in organized tabs
+- **Professional Two-Column Layout** - Selection pane and action/information pane
+- **Dark Theme Design** - Professional, eye-friendly interface inspired by Lumi-Setup
+- **Provider Selection Dialog** - Choose between Google Drive and pCloud with secure authentication
+- **Tabbed Layout** - Progress, Logs, and Settings in organized tabs
 - **Responsive Design** - Adapts to different screen sizes
-- **Intuitive Controls** - Easy-to-use buttons and checkboxes
+- **Intuitive Controls** - Fully functional selection buttons and checkboxes
 - **Real-time Progress Tracking** - Live progress bars and status updates
 - **Advanced Logging System** - Multi-level logging with filtering and export
-- **Professional Reporting** - HTML export and detailed analytics
+- **Cloud Connection Status** - Visual feedback for connection state
 - **Multi-language support** (English, German, more coming)
 
 ## 🚀 Quick Start
 
 ### Installation
 
-#### Option 1: From Source (Recommended for PoC)
+#### Option 1: From Source (Recommended for Beta)
 ```bash
 git clone https://github.com/lumisync/lumisync.git
 cd lumisync
@@ -160,6 +165,15 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 - [ ] Firefox/Thunderbird profile detection
 - [ ] GNOME settings backup/restore
 - [ ] End-to-end workflow
+
+### 🌟 What's New in v0.2.0
+- **Fixed Selection Buttons** - Select All, Select None, and Recommended now work correctly
+- **pCloud Integration** - Full pCloud support with real authentication
+- **Real-World Authentication** - No more demo accounts, actual cloud storage connections
+- **Automatic Folder Creation** - "Lumi-Sync" folder created automatically in your cloud storage
+- **Provider Selection Dialog** - Professional interface for choosing cloud storage provider
+- **Enhanced UI Feedback** - Better visual feedback and status updates
+- **Organized Backup Storage** - All backups stored in dedicated cloud folder structure
 
 ### Version 0.2.0 (Beta)
 - [ ] Multi-cloud provider support
